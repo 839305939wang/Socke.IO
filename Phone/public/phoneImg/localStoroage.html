@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <button onclick="set();">添加值</button>
+  <button onclick="get();">获取值</button>
+<script>
+    var get = function(){
+        var value = localStorage.getItem("user");
+        console.log("本地缓存值:"+value+"--type of："+(typeof value)+"-:"+value["wang"]);
+    }
+    var set = function(){
+        localStorage.setItem("user",{"wang":"yangy"})
+    }
+</script>
+</body>
+</html>
